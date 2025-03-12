@@ -1,0 +1,146 @@
+/* Catppuccin Mocha Theme for Obsidian */
+:root {
+  /* Catppuccin Color Variables */
+  --rosewater: #f5e0dc;
+  --flamingo: #f2cdcd;
+  --pink: #f5c2e7;
+  --mauve: #cba6f7;
+  --red: #f38ba8;
+  --maroon: #eba0ac;
+  --peach: #fab387;
+  --yellow: #f9e2af;
+  --green: #a6e3a1;
+  --teal: #94e2d5;
+  --sky: #89dceb;
+  --sapphire: #74c7ec;
+  --blue: #89b4fa;
+  --lavender: #b4befe;
+  
+  /* Base Colors */
+  --text: #cdd6f4;
+  --subtext1: #bac2de;
+  --subtext0: #a6adc8;
+  --overlay2: #9399b2;
+  --overlay1: #7f849c;
+  --overlay0: #6c7086;
+  --surface2: #585b70;
+  --surface1: #45475a;
+  --surface0: #313244;
+  --base: #1e1e2e;
+  --mantle: #181825;
+  --crust: #11111b;
+}
+
+.theme-dark {
+  --background-primary: var(--base);
+  --background-secondary: var(--mantle);
+  --background-tertiary: var(--crust);
+  
+  --text-normal: var(--text);
+  --text-muted: var(--subtext0);
+  --text-faint: var(--surface2);
+  
+  --interactive-normal: var(--surface1);
+  --interactive-hover: var(--surface2);
+  --interactive-accent: var(--pink);
+  --interactive-accent-hover: var(--mauve);
+  
+  --background-modifier-border: var(--surface0);
+  --divider-color: var(--surface0);
+}
+
+/* Headers */
+.cm-header-1, .markdown-preview-view h1 {
+  color: var(--peach);
+  font-size: 2.2em;
+}
+.cm-header-2, .markdown-preview-view h2 {
+  color: var(--pink);
+  font-size: 1.8em;
+}
+.cm-header-3, .markdown-preview-view h3 {
+  color: var(--mauve);
+  font-size: 1.5em;
+}
+
+/* Links */
+.internal-link {
+  color: var(--lavender);
+  text-decoration: none;
+}
+.internal-link:hover {
+  color: var(--blue);
+  text-decoration: underline;
+}
+
+/* Code Blocks */
+.cm-s-obsidian pre.HyperMD-codeblock {
+  background-color: var(--surface0);
+  border: 1px solid var(--surface1);
+  border-radius: 4px;
+  color: var(--text);
+}
+
+/* Inline Code */
+.cm-inline-code {
+  background-color: var(--surface0);
+  color: var(--green);
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+/* Blockquotes */
+.markdown-preview-view blockquote {
+  color: var(--subtext1);
+  border-left: 4px solid var(--surface2);
+  background-color: var(--surface0);
+  padding: 10px;
+  border-radius: 0 4px 4px 0;
+}
+
+/* Tables */
+th {
+  background-color: var(--surface0);
+  color: var(--peach);
+}
+td {
+  border: 1px solid var(--surface1);
+}
+tr:nth-child(even) {
+  background-color: var(--surface0);
+}
+
+/* Checkboxes */
+.task-list-item-checkbox {
+  border: 1px solid var(--surface2);
+  background-color: var(--surface0);
+}
+.task-list-item-checkbox:checked {
+  background-color: var(--green);
+  border-color: var(--green);
+}
+
+/* Scrollbars */
+::-webkit-scrollbar-thumb {
+  background-color: var(--surface1);
+  border-radius: 8px;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--base);
+}
+
+/* Active Elements */
+.is-active {
+  background-color: var(--surface0);
+}
+.nav-file-title.is-active {
+  color: var(--lavender);
+}
+
+/* Hover Effects */
+.clickable-icon:hover {
+  color: var(--mauve);
+}
+.workspace-tab-header:hover {
+  background-color: var(--surface0);
+}
